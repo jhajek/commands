@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo -e "[mysqld] \n\n" > ~/.my.cnf
-echo -e "[client] \n user = root \n password = $DBPASS" >> ~/.my.cnf
-echo -e "\n port = 3306 \n socket = /var/run/mysqld/mysqld.sock" >> ~/.my.cnf
+echo -e "[mysqld]\n\n" > ~/.my.cnf
+echo -e "[client]\nuser = root\npassword = $DBPASS" >> ~/.my.cnf
+echo -e "\nport = 3306\nsocket = /var/run/mysqld/mysqld.sock\n" >> ~/.my.cnf
