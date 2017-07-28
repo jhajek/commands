@@ -1,5 +1,3 @@
-[mysqld]
-
 -- change the permissions IP
 -- https://stackoverflow.com/questions/7616520/how-do-execute-a-sql-script-from-bash
 -- http://stackoverflow.com/questions/2857446/error-1130-in-mysql
