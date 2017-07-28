@@ -7,3 +7,7 @@
 echo -e "[mysqld]\n\n" > ~/.my.cnf
 echo -e "[client]\nuser = root\npassword = $DBPASS" >> ~/.my.cnf
 echo -e "\nport = 3306\nsocket = /var/run/mysqld/mysqld.sock\n" >> ~/.my.cnf
+
+echo -e "[mysqld]\n\n" > ~/.my.cnf.backup
+echo -e "[client]\nuser = backup\npassword = $BKPASS" >> ~/.my.cnf.backup
+echo -e "\nport = 3306\nsocket = /var/run/mysqld/mysqld.sock\n" >> ~/.my.cnf.backup
