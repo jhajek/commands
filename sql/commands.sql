@@ -1,6 +1,7 @@
 -- change the permissions IP
 -- https://stackoverflow.com/questions/7616520/how-do-execute-a-sql-script-from-bash
 -- http://stackoverflow.com/questions/2857446/error-1130-in-mysql
+-- Changed this file
 
 -- https://docs.moodle.org/33/en/Installation_quick_guide#Create_a_database
 -- localhost install
