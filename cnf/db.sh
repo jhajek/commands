@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# https://stackoverflow.com/questions/2500436/how-does-cat-eof-work-in-bash
 cat <<EOF >> /etc/mysql/my.cnf
 
 [client] 
