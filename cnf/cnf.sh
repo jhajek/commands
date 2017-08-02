@@ -7,7 +7,7 @@
 echo -e "[mysqld]" > ~/.my.cnf
 echo -e "\ninnodb_file_format = Barracuda" >> ~/.my.cnf
 echo -e "\ninnodb_file_per_table = 1" >> ~/.my.cnf
-echo -e "\ninnodb_large_prefix" >> ~/.my.cnf
+echo -e "\ninnodb_large_prefix = \"ON\"" >> ~/.my.cnf
 echo -e "\ncharacter-set-server = utf8mb4" >> ~/.my.cnf
 echo -e "\ncollation-server = utf8mb4_unicode_ci" >> ~/.my.cnf
 echo -e "\nskip-character-set-client-handshake" >> ~/.my.cnf
