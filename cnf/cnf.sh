@@ -19,6 +19,3 @@ echo -e "[mysqld]\n\n" > ~/.my.cnf.backup
 echo -e "[client]\nuser = backup\npassword = $BKPASS" >> ~/.my.cnf.backup
 echo -e "\nport = 3306\nsocket = /var/run/mysqld/mysqld.sock\n" >> ~/.my.cnf.backup
 echo -e "\ndefault-character-set = utf8mb4\n" >> ~/.my.cnf.backup
-
-
-
