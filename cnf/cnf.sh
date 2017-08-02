@@ -4,7 +4,7 @@
 # http://serverfault.com/questions/103412/how-to-change-my-mysql-root-password-back-to-empty/103423#103423
 # https://stackoverflow.com/questions/8020297/mysql-my-cnf-file-found-option-without-preceding-group
 
-echo -e "[mysqld]\n\n" > ~/.my.cnf
+echo -e "[mysqld]" > ~/.my.cnf
 echo -e "\ninnodb_file_format = Barracuda" >> ~/.my.cnf
 echo -e "\ninnodb_file_per_table = 1" >> ~/.my.cnf
 echo -e "\ninnodb_large_prefix" >> ~/.my.cnf
