@@ -8,6 +8,6 @@ cat <<EOF >> /var/www/html/config.php
 
 \$CFG->xsendfile = 'X-Accel-Redirect';
 \$CFG->xsendfilealiases = array(
-    '/var/moodledata' => $CFG->dataroot
+    '/var/moodledata' => \$CFG->dataroot
 );
 EOF
