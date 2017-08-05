@@ -6,8 +6,8 @@
 # Enable xsendfile for Nginx in Moodles config.php, this is documented in the config-dist.php, a minimal configuration look like this, 
 cat <<EOF >> /var/www/html/config.php
 
-$CFG->xsendfile = 'X-Accel-Redirect';
-$CFG->xsendfilealiases = array(
+\$CFG->xsendfile = 'X-Accel-Redirect';
+\$CFG->xsendfilealiases = array(
     '/var/moodledata' => $CFG->dataroot
 );
 EOF
