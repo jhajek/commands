@@ -67,12 +67,6 @@ server {
     alias /var/moodledata/; # ensure the path ends with /
   }
 
-  # https://docs.moodle.org/33/en/Nginx 
-  location /var/moodledata/ {
-    internal;
-    alias /var/moodledata/; # ensure the path ends with /
-  }
-
 	# deny access to .htaccess files, if Apache's document root
 	# concurs with nginx's one
 	#
