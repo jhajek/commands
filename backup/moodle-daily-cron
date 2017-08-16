@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# https://docs.moodle.org/32/en/Cron 
-/usr/bin/php  /var/wwww/html/moodle/admin/cli/cron.php >/dev/null
-
-# https://superuser.com/questions/664454/why-doesnt-my-cron-d-per-minute-job-run
-# */1 * * * * root /usr/bin/php  /path/to/moodle/admin/cli/cron.php >/dev/null
