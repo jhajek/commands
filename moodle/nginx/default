@@ -56,14 +56,12 @@ server {
         #       fastcgi_pass 127.0.0.1:9000;
         #       # With php7.0-fpm:
                 fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-                   if (!-e $request_filename) {
-             rewrite ^(.*\.php)(/)(.*)$ $1?file=/$3 last;
 
-			 #Needed for extended moodle functions
-        	fastcgi_read_timeout 1200;
-			
-			#Fix upload limit
-    		client_max_body_size 10000M;
+   			    #Needed for extended moodle functions
+        		fastcgi_read_timeout 1200;
+
+                if (!-e $request_filename) {
+                rewrite ^(.*\.php)(/)(.*)$ $1?file=/$3 last;			
         }
      } # end of location
 
@@ -72,6 +70,10 @@ server {
     internal;
     alias /var/moodledata/; # ensure the path ends with /
   }
+
+	#Fix upload limit
+    client_max_body_size 10000M;
+   
 
 	# deny access to .htaccess files, if Apache's document root
 	# concurs with nginx's one
