@@ -1,4 +1,4 @@
 #!/bin/bash
 
 EPOCH=`date +%s`
-sudo tar -cvJf /var/moodledata ~/moodledata-$EPOCH.tar.xz
+sudo tar -cvJf ~/moodledata-$EPOCH.tar.xz /var/moodledata 
