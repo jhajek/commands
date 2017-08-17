@@ -3,4 +3,4 @@
 # https://stackoverflow.com/questions/18870244/can-i-have-multiple-mysqldump-sections-in-my-cnf
 
 EPOCH=`date +%s`
-sudo mysqldump -v --defaults-file="~/.my.cnf.backup" -u root -p moodle | gzip > moodle-db-backup-$EPOCH.dump.gz
+sudo mysqldump --defaults-file="~/.my.cnf.backup" -u root -p moodle | gzip -v > moodle-db-backup-$EPOCH.dump.gz
