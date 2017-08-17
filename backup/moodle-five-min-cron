@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # https://docs.moodle.org/32/en/Cron 
 # https://superuser.com/questions/664454/why-doesnt-my-cron-d-per-minute-job-run
 
